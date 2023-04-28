@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import './App.css';
+import React from 'react';
+
+
+const App=()=>{ 
+ 
+
+  const title=  React.createElement('h1', {}, 'Toppics coverd');
+ const link1= React.createElement('a', { href: " " }, 'linkin');
+ const link2= React.createElement('a', { href: " " }, 'HTML-strturing web');
+ const link3= React.createElement('a', { href: " " }, 'css-styling web');
+ const  para1=React.createElement('p' , {}, 'Lorem ipsum dolor sit amet');
+
+ 
+  const  para2=React.createElement('p', {}, ' Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet');
+  const  para3=React.createElement('p', {}, 'Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet');
+  const  para4=React.createElement('p', {}, 'Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet');
+return(
+<>
+<div className='App'>
+{title}
+{para1}
+{link1}
+{para2}
+{para3}
+{link2}
+{para3}
+
+{link3}
+{para4}
+
+
+</div>
+
+</>
+);
+
+};
+
 
 export default App;
